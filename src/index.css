@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body,
+input,
+select,
+option,
+.btn {
+  font-family: "Varela Round", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+.heading-font {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  height: 12vh;
+  background-color: rgb(202, 132, 3);
 }
+
+form {
+  height: 15vh;
+  background-color: orangered;
+}
+
+form input {
+  width: 12rem !important;
+}
+form select {
+  width: 5rem !important;
+}
+.list-container {
+  height: 65vh;
+  background-color: #583101;
+}
+.list-container .items-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 350px;
+}
+
+.list-item {
+  transition-duration: 0.8s;
+}
+
+.list-item > div {
+  height: 30px;
+}
+
+.list-item i {
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.list-item .remove:hover {
+  color: red;
+}
+.list-item:hover {
+  border-color: #a47148 !important;
+}
+
+select {
+  width: fit-content !important;
+  cursor: pointer;
+}
+
+.btn.add {
+  border: none;
+}
+.btn.add:hover {
+  background-color: rgba(56, 178, 197, 0.95);
+}
+.statistics {
+  height: 8vh;
+}
+.statistics,
+.btn.add {
+  background-color: #38b2c5;
+}
+
+/* 
+@media (max-width: 767px) {
+  form{
+    flex-d
+  }
+} */
